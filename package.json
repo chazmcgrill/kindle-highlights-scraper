@@ -1,0 +1,26 @@
+{
+    "name": "kindle-highlights-scraper",
+    "version": "1.0.0",
+    "description": "Web scraper for extracting kindle highlights",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx tsc",
+        "start": "npm run build && node --env-file=.env dist/index.js"
+    },
+    "keywords": [
+        "kindle",
+        "highlight",
+        "scraper"
+    ],
+    "author": "Charlie Taylor",
+    "license": "MIT",
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.12",
+        "selenium-webdriver": "^4.16.0"
+    },
+    "devDependencies": {
+        "@tsconfig/node20": "^20.1.2",
+        "@types/selenium-webdriver": "^4.1.21",
+        "typescript": "^5.3.3"
+    }
+}
