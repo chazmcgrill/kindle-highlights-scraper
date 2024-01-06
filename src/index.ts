@@ -45,10 +45,7 @@ async function runHighlightsScraper() {
         for (const libraryItem of libraryItems) {
             const libraryItemLink = await driver.findElement(By.partialLinkText(libraryItem.title));
             await libraryItemLink.click();
-            const annotationsElement = await driver.wait(
-                until.elementLocated(By.id('annotation-section')),
-                NAV_WAIT_IN_MS,
-            );
+            const annotationsElement = await driver.wait(until.elementLocated(By.id('annotation-section')), NAV_WAIT_IN_MS);
             const annotationsHtml = await annotationsElement.getAttribute('innerHTML');
             const annotations = parseAnnotations(annotationsHtml);
 
