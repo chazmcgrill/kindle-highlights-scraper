@@ -1,11 +1,10 @@
 # Kindle Annotations to Markdown Converter
 
-## Overview
-This Node.js utility is designed to efficiently extract Kindle book annotations and convert them into Markdown format.
+Node.js utility for efficiently extracting Kindle book annotations and converting them into Markdown format.
 
 ## Installation
 Before running the script, ensure you have Node.js installed on your system.
-Recommend using nvm to manage you node versions this project uses version 20.
+Recommend using [nvm](https://github.com/nvm-sh/nvm) to manage your node versions between projects. This project uses version 20.
 
 ```bash
 nvm use
